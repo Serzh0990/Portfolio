@@ -1,0 +1,19 @@
+<%= form_for @item , :html =>  {:multipart => true} do |f| %>
+	<div class = 'form'>
+		<div class = 'form-input'>
+	<%= f.label 'Название фотографии' %>
+	<%= f.text_field :title , placeholder: 'название фотографии'%>
+	</div>
+	<hr>
+	<div class = 'form-input'>
+	<%= f.label 'Описание фотографии' %>
+	<%= f.text_area :text, placeholder: 'Подробное описание.Настройки экспозиции,светочувствительности и тд' %>
+	</div>
+	<span class = 'fileinput'><%= f.file_field :image %></span>
+	<hr>
+	<div class = 'form-buttons'>
+		<%= f.submit 'Отправить' , class: 'btn'%>
+		</div>
+	</div>
+	
+	<%end%>
