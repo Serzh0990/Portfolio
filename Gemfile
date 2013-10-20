@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'friendly_id', '~> 5.0.0'
 gem 'russian'
+gem 'thin'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
