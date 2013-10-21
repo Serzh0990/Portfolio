@@ -1,0 +1,40 @@
+body {
+	width: 1255px;
+	height:650px;
+	
+}
+
+#container {
+    width: 900px;
+	margin:0 auto;
+}
+img {
+	margin:0 auto;
+}
+
+.grow img {
+width: 260px;
+height: 220px;
+overflow: hidden;
+-webkit-filter: opacity(75%); 
+
+
+	
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+       -o-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+
+}
+ 
+.grow img:hover {
+  width: 300px;
+  height: 260px;
+-webkit-filter: opacity(100%);
+-webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}

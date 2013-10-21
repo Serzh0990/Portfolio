@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'friendly_id', '~> 5.0.0'
 gem 'russian'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'paperclip-dropbox'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
