@@ -1,8 +1,25 @@
-<h1>ITEMS!!!</h1>
-
-
-<% @items.each do |item| %>
-	<span class = 'grow pic'><%= link_to image_tag(item.image.url(:thumb)), item, class: 'img-thumb'%></span>
-	<p><%= link_to item.title, item %></p>
-	<hr>
-	<%end%>
+<div class = 'col-sm-12 col-lg-12 col-xs-12'><h2>Welcome! Super super <strong>Super</strong><small>Small</small></</div>
+<div class = 'container'>
+<div class = 'view view-first'>
+	<%=image_tag('1.jpg')%>
+	<div class = 'mask'>
+		<h2>Title</h2>
+		<p>Your text</p>
+		 <%= link_to 'Read More', items_path, class:'info'%>
+		</div>
+	</div>
+	
+			<% @items.each do |item| %>
+	
+	<div class="view view-first">
+		<%= image_tag item.image(:thumb)%>
+		<div class = 'mask'> 
+		<h2><%= item.title%></h2>
+		<p><%= item.text %></p>
+		<%= link_to 'item', item, class:'info'%>
+		
+		</div>
+		
+	</div>
+							<%end%>
+	</div>

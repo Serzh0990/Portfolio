@@ -1,6 +1,12 @@
-<div id = 'container'>
-<div><%= image_tag(@item.image.url(:original))%></div>
-<h1><%= @item.title%></h1>
+<div class = 'container'>
+<section class = 'portfolio'>	
+	<div id = 'portfolio-items'>
+		<div class = 'entry col-sm-6 col-lg-6'>
+<%= image_tag(@item.image.url(:original), class: 'img-responsive')%>
+<h2><%= @item.title%></h2>
 <hr>
 <p><%= @item.text%></p>
+
+</div>
+</section>
 </div>
