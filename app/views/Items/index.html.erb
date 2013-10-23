@@ -1,25 +1,18 @@
-<div class = 'col-sm-12 col-lg-12 col-xs-12'><h2>Welcome! Super super <strong>Super</strong><small>Small</small></</div>
+<h1>Welcome</h1>
 <div class = 'container'>
-<div class = 'view view-first'>
-	<%=image_tag('1.jpg')%>
-	<div class = 'mask'>
-		<h2>Title</h2>
-		<p>Your text</p>
-		 <%= link_to 'Read More', items_path, class:'info'%>
-		</div>
-	</div>
-	
 			<% @items.each do |item| %>
-	
-	<div class="view view-first">
-		<%= image_tag item.image(:thumb)%>
+			<div class = 'col-md-4 col-lg-3 col-xs-6 col-sm-6'>
+			
+	<div class="view view-third">
+		<%= image_tag item.image(:thumb), class:'img-responsive'%>
 		<div class = 'mask'> 
 		<h2><%= item.title%></h2>
-		<p><%= item.text %></p>
-		<%= link_to 'item', item, class:'info'%>
+		<p><%= truncate(item.text, length:100 )%></p>
+		<%= link_to 'Read More', item, class:'info'%>
 		
 		</div>
 		
 	</div>
-							<%end%>
 	</div>
+	
+							<%end%>

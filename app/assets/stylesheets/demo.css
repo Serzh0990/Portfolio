@@ -1,7 +1,7 @@
 @import url('reset.css');
 /* General Demo Style */
 body{
-    background:#f9f9f9 url(../images/white_texture.jpg) repeat top left;
+    background:#f9f9f9 url('white_texture.jpg') repeat top left;
 	color: #333;
 	font-family: 'Oswald', Arial, sans-serif;
 	font-size: 13px;

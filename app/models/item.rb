@@ -2,7 +2,7 @@ class Item < ActiveRecord::Base
 
 validates :title , presence: true  
 
-has_attached_file :image, :styles => {:thumb => '300x200', :original => '900x650'}, :default_url => "/images/:style/missing.png",
+has_attached_file :image, :styles => {:thumb => '300x200', :original => '900x650'}, :default_url => "/assets/magnifier.png",
 :storage => :dropbox,
 :dropbox_credentials => Rails.root.join("config/dropbox.yml")
   
